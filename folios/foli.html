@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" type="text/css" href="../css/foli.css" />
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <div class="foli">
+      <div class="row">
+        <a href="../index.html">Back</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <a href="github/add.php"><h1>Create Github</h1></a>
+        <div style="overflow-x: auto">
+          <table class="table1">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Judul</th>
+                <th>Link Github</th>
+                <th>Link Sosmed</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- menampilkan data pada tabel dengan memanggil variabel -->
+                <td col="the-dark"><?= $no++ ?>001</td>
+                <td col="the-dark"><?= $id ?>Revi Dwi Astadinia</td>
+                <td>https://wa.me/6185695656522</td>
+                <td>https://www.instagram.com/aldianxz/?hl=en</td>
+                <td>
+                  <div class="tbdy">
+                    <a href="#"><i data-feather="edit-3"></i></a>
+                    <a href="#"><i data-feather="trash"></i></a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h6>Jumlah Data Barang : 1</h6>
+        </div>
+      </div>
+      <div class="flap"></div>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

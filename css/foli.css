@@ -1,0 +1,176 @@
+:root {
+  --colab1: #626262;
+  --colab2: #9bc5c3;
+  --bg: #010101;
+  --p: #fbee97;
+  --primary: #b6895b;
+}
+body {
+  background-color: var(--colab1);
+}
+/* foli */
+.foli {
+  padding: 1rem 7% 1.4rem;
+}
+.foli .row a {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0.1rem;
+  color: #fff;
+}
+
+.foli .row a:hover {
+  color: var(--primary);
+}
+.foli .row a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--colab2);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.foli .row a:hover::after {
+  transform: scaleX(0.5);
+}
+.foli .row a {
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* text-start */
+.text-start {
+  padding: 1rem 7% 1.4rem;
+}
+.text-start a {
+  position: absolute;
+  font-size: 1.4rem;
+  color: #010101;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 1000px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.text-start a {
+  text-align: center;
+}
+.text-start a:hover {
+  color: var(--colab2);
+}
+
+/* conteainer table */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap");
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 1000px;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.container .content {
+  position: absolute;
+  top: 30%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
+  font-family: "Merriweather", serif;
+}
+.container .content a {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0.1rem;
+  color: #fff;
+  background-color: #010101;
+  border-radius: 20px;
+}
+.container .content a:hover {
+  color: var(--primary);
+}
+.container .content h1 {
+  font-weight: 900;
+  font-size: 20px;
+  text-align: left;
+}
+
+.container .content h3 {
+  font-weight: 300;
+}
+.container .content .table1 .tbdy a {
+  background-color: #f2f2f2;
+  color: var(--bg);
+}
+
+.flap {
+  width: 100%;
+  height: 100%;
+}
+
+.flap::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg")
+    white;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.flap::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg")
+    white;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.container:hover .flap::after {
+  transform: translatex(500px);
+}
+
+.container:hover .flap::before {
+  transform: translatex(-500px);
+}
+
+/* Table Css */
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
